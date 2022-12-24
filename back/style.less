@@ -1,0 +1,189 @@
+// compress: false
+
+@font-face{
+    font-family: Pacifico-Regular;
+    src: url('Pacifico-Regular.ttf');
+}
+@font-face{
+    font-family: OpenSans-Light;
+    src: url('OpenSans-Light.ttf');
+}
+@font-face{
+    font-family: OpenSans-Regular;
+    src: url('OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family: OpenSans-Bold;
+    src: url('OpenSans-Bold.ttf');
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.top_header{
+    
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 50px;
+    
+    align-items: center;
+    
+    background-color: #0f143733;
+    
+    #brandi_text{
+        margin-left: 10%;
+        font-size: 28px;
+        font-family: "Pacifico-Regular";
+        color: #ffffff;
+    }
+    
+    #tag_text{
+        width: 20%;
+        margin-left: 10px;
+        white-space: nowrap;
+        font-family: "OpenSans-Light";
+        font-size: 13px;
+        color: #546466;
+    }
+    
+    nav{
+        width: inherit;
+        margin-right: 10%;
+    }
+    
+    #variable_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 30%;
+        
+        font-family: "OpenSans-Regular";
+        font-size: 13px;
+        color: #ffffff;
+        
+        list-style-type: none;
+    }
+}
+
+.header_img{  
+    width: 100%;
+    height: 600px;
+    
+    .img_logo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+        .img_logo_opacity{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        object-fit: cover;
+    }
+}
+
+.header_content{
+    width: 100%;
+    height: 600px;
+    
+    display: flex;
+    flex-direction: row;
+    
+    #center{
+        width: 90%;
+        height: 100%;
+        
+        #content{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 100%;
+            
+            #social{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 20%;
+                
+                .social_img{
+                    width: auto;
+                    height: auto;
+                    margin: 8px;
+                }
+            }
+            
+            #text_content_place{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                margin-top: 50px;
+                justify-content: flex-end;
+                align-items: center;
+
+                    .green_text{
+                        color: #0feb9e;
+                    }
+                
+                h1{
+                    font-family:"OpenSans-Light";
+                    font-size: 62px;
+                    color: white;
+                    margin: 0px;
+                    
+                    #text1{
+                        font-family:"OpenSans-Bold";
+                    }
+                }
+                h2{
+                    font-family:"OpenSans-Light";
+                    font-size: 48px;
+                    color: white;
+                    margin: 0px;
+                }
+                h3{
+                    font-family:"OpenSans-Light";
+                    font-size: 18px;
+                    color: white;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    #right{
+        width:10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .slider_dots{
+            width: auto;
+            height: auto;
+            margin: 8px;
+        }
+    }
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width:100%;
+    height: 400px;
+    background-color: #f4f7f9;
+}
